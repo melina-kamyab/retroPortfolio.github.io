@@ -1,5 +1,9 @@
 @import './utilities/utilities';
-
+@import './components/components';
+//@import './components/croissant';
+html {
+  scroll-behavior: smooth;
+}
 body {
   z-index: 1;
   margin: auto;
@@ -8,9 +12,14 @@ body {
   align-items: center;
   background-color: #fff8e4;
 }
-body[data-aos-duration='4000'] [data-aos],
-[data-aos][data-aos][data-aos-duration='800'] {
-  transition-duration: 800ms;
+body[data-aos-duration='1000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='1000'] {
+  transition-duration: 1000ms;
+}
+
+body[data-aos-duration='1500'] [data-aos],
+[data-aos][data-aos][data-aos-duration='1500'] {
+  transition-duration: 1500ms;
 }
 
 h1 {
@@ -34,13 +43,13 @@ p {
   height: 85vh;
   width: 100vw;
   padding: 40px;
+  padding-top: 70px;
 
-  // h1 {
-  //   font-size: 3.5rem;
-  // }
   .slogan {
     background-color: #fff8e49a;
-    width: 80%;
+    border-radius: 3px;
+    padding: 0.6rem;
+    width: 85%;
     p {
       color: $base-red;
       font-size: 1.4rem;
@@ -76,6 +85,7 @@ p {
   h3 {
     font-size: 1.4rem;
     font-weight: 500;
+    color: #d06343;
   }
 
   .main-chunk {
@@ -107,7 +117,7 @@ p {
   @include flexColumnSpaceBetween;
   @include centerBackground;
   background-image: url('../assets/images/wave-left-to-right.png');
-  height: 100vh;
+  //height: 100vh;
   width: 100vw;
   padding: 40px;
 
@@ -134,9 +144,18 @@ p {
     }
   }
 
+  a:hover {
+    text-decoration: underline;
+    color: cornflowerblue;
+  }
+
   .last-message {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #fff8e49a;
+    border-radius: 3px;
+    padding: 0.6rem;
     p {
       color: $base-red;
       font-size: 1.4rem;

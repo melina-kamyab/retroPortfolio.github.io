@@ -1,0 +1,24 @@
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff6b;
+  width: 100%;
+}
+
+.contact{
+  font-family:'Space Mono', monospace;
+  display:flex;
+  width: auto;
+  justify-content:space-between;
+  padding-left: 0; 
+  width:80%;
+  margin: 16px 0; 
+
+  li{
+    list-style: none;
+    font-size: 12px;   
+  }
+  img{
+    width: 35px; 
+  }
+}

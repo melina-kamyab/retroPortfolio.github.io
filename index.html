@@ -8,10 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -20,12 +16,45 @@
   <title>Melina Kamyab</title>
 </head>
 <body>
-  <header></header>
+
+  <header>
+    <nav class="navbar fixed-top">
+      <a class="navbar-brand" href=""></a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+            <a class="nav-link" href="https://github.com/melina-kamyab">Github |</a>
+      <li class="nav-item ">
+          <a class="nav-link" href="https://www.linkedin.com/in/melina-kamyab-7688a062/">
+            LinkedIn
+          </a>
+      </li>
+    </ul>
+    </nav>
+  </header>
+
   <main>
     <div class="first-container">
       <div class="header">
         <h1>Hey there, I'm Melina!</h1>
       </div>
+
+      <div id="modal-container">
+        <div class="modal-background">
+          <div class="modal">
+            <h2>Hey again!</h2>
+            <p>My name is Melina and I'm currently a frontend developer student at Medieinsitutet.    </p>
+            <p> I find programming fun since I get to be creative and go bananas with my pages, at least for now... </p>
+            <p>My ambition is to be able to bring my ideas to life with little technical fuzz!</P>
+            <p> I've been coding in Vanilla Javascript, Angular, React, Node.js, HTML and CSS and more. </p>
+            <p>Check out my Github to see the projects that I have done so far (links below!).</p>
+            <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                      <rect x="0" y="0" fill="none" width="683" height="700" rx="3" ry="3"></rect>
+                    </svg>
+          </div>
+        </div>
+      </div>
+
+      <div id="six" class="button">Click me!</div>
       <div class="slogan">
         <p>A creative frontend developer, </p>
         <p> based in Stockholm.</p>
@@ -34,7 +63,7 @@
     <div class="second-container">
       <div class="main-chunk">
         <h2>MELINA'S TOP 3</h2>
-        <div class="top-three" id="first-top">
+        <div class="top-three" id="first-top" data-aos="fade-in" data-aos-duration="1500">
           <h3>1. Planning new projects</h3>
           <p>
             I have a master's degree in Management and worked as Deputy
@@ -45,7 +74,7 @@
             the future.
           </p>
         </div>
-        <div class="top-three">
+        <div class="top-three" data-aos="fade-in"  data-aos-duration="1500">
           <h3>2. Coding</h3>
           <p>
             On the path to become a full feathered frontend developer! As a
@@ -55,7 +84,7 @@
             however, open and eager to try new frameworks and languages too!
           </p>
         </div>
-        <div class="top-three">
+        <div class="top-three" data-aos="fade-in"  data-aos-duration="1500">
           <h3>3. Interior design and decoration</h3>
           <p>
             A big part the reason why I have chosen to study frontend
@@ -74,21 +103,21 @@
     <div class="third-container">
       <h1>Check out some of my projects…</h1>
       <section>
-        <div class="project" data-aos="slide-up" data-aos-duration="800">
-          <a href=""> 
+        <div class="project" data-aos="slide-up" data-aos-duration="1000">
+          <a href="https://github.com/melina-kamyab/RestaurangBokning.git"> 
             <h3>BOOKING SYSTEM, REACT</h3>
             <p>In this bla bla</p>
           </a>
         </div>
-        <div class="project" data-aos="slide-up" data-aos-duration="800">
-          <a href="">
+        <div class="project" data-aos="slide-up" data-aos-duration="1000">
+          <a href="https://github.com/melina-kamyab/WEBSHOP-FED20S-GROUP-6.git">
             <h3>WEBBSHOP, NODE.JS & JS</h3>
             <p>In this bla bla</p>
           </a>
         </div>
-        <div class="project" data-aos="slide-up" data-aos-duration="800">
-          <a href=""> 
-            <h3>SOMETHING, ANGULAR</h3>
+        <div class="project" data-aos="slide-up" data-aos-duration="1000">
+          <a href="https://github.com/melina-kamyab/AngularWebshop.git"> 
+            <h3>WEBSHOP, ANGULAR</h3>
             <p>In this bla bla</p>
           </a>
 
@@ -96,11 +125,38 @@
       </section>
       <div class="last-message">
         <p>…Or hit me up and we'll grab a coffee and have a chat!</p>
-        <img src="https://img.icons8.com/plasticine/100/000000/croissant.png"/>
+        <img src="https://img.icons8.com/plasticine/100/000000/croissant.png" class="croissant"/>
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer>
+    <ul class="contact">
+      <li class="contact-details">
+        <a href="https://github.com/melina-kamyab">
+          <img src="https://img.icons8.com/carbon-copy/100/000000/github-squared.png"/>
+        </a>
+      </li>
+
+      <li class="contact-details">
+        <a href="https://www.linkedin.com/in/melina-kamyab-7688a062/">
+          <img src="https://img.icons8.com/carbon-copy/100/000000/linkedin.png"/>
+        </a>
+      </li>
+
+      <li class="contact-details">
+        <a href="mailto:melina.kamyab@gmail.com">
+        <img src="https://img.icons8.com/carbon-copy/100/000000/apple-mail.png"/>
+      </a>
+      </li>
+
+      <li >
+        <a href="./PDF-files/CV-EN.pdf">
+          <img src="https://img.icons8.com/carbon-copy/100/000000/adobe-acrobat.png"/>
+        </a>
+      </li>
+      </li>
+    </ul>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -114,7 +170,9 @@
     <script>
       AOS.init();
     </script>
-  <script src="main.js"></script>
+    <script src="	https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

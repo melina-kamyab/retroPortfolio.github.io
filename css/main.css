@@ -1,3 +1,299 @@
+.croissant:hover {
+  padding-left: 0.625rem;
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+header {
+  width: 100%;
+}
+
+.first-container {
+  min-height: 400px;
+}
+
+.navbar {
+  font-family: "Space Mono", monospace;
+  display: flex;
+  background-color: #ffffff6b;
+}
+.navbar ul {
+  width: 30%;
+  justify-content: space-evenly;
+}
+.navbar li {
+  font-size: 0.6rem;
+}
+.navbar li a {
+  color: cornflowerblue;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff6b;
+  width: 100%;
+}
+
+.contact {
+  font-family: "Space Mono", monospace;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 80%;
+  margin: 16px 0;
+}
+.contact li {
+  list-style: none;
+  font-size: 12px;
+}
+.contact img {
+  width: 35px;
+}
+
+html.modal-active, body.modal-active {
+  overflow: hidden;
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+}
+#modal-container.six {
+  transform: scale(1);
+}
+#modal-container.six .modal-background {
+  background: rgba(0, 0, 0, 0);
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six .modal-background .modal {
+  background-color: transparent;
+  animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p {
+  opacity: 0;
+  position: relative;
+  animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six .modal-background .modal .modal-svg rect {
+  animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out {
+  animation: quickScaleDown 0s 0.5s linear forwards;
+}
+#modal-container.six.out .modal-background {
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out .modal-background .modal {
+  animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out .modal-background .modal h2, #modal-container.six.out .modal-background .modal p {
+  animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out .modal-background .modal .modal-svg rect {
+  animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container .modal-background .modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  position: relative;
+}
+#modal-container .modal-background .modal h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#modal-container .modal-background .modal p {
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0;
+}
+#modal-container .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
+.content {
+  min-height: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+  z-index: 0;
+}
+.content h1 {
+  padding: 75px 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+}
+.content .buttons {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.content .buttons .button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 10px;
+  background: red;
+  font-size: 18px;
+  background-color: #efefef;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.content .buttons .button:hover {
+  color: white;
+  background: #009bd5;
+}
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes modalFadeIn {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes modalContentFadeIn {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes sketchIn {
+  0% {
+    stroke-dashoffset: 778;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes quickScaleDown {
+  0% {
+    transform: scale(1);
+  }
+  99.9% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes modalFadeOut {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes modalContentFadeOut {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: -20px;
+  }
+}
+@keyframes sketchOut {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 778;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   z-index: 1;
   margin: auto;
@@ -7,9 +303,14 @@ body {
   background-color: #fff8e4;
 }
 
-body[data-aos-duration="4000"] [data-aos],
-[data-aos][data-aos][data-aos-duration="800"] {
-  transition-duration: 800ms;
+body[data-aos-duration="1000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="1000"] {
+  transition-duration: 1000ms;
+}
+
+body[data-aos-duration="1500"] [data-aos],
+[data-aos][data-aos][data-aos-duration="1500"] {
+  transition-duration: 1500ms;
 }
 
 h1 {
@@ -38,12 +339,15 @@ p {
   height: 85vh;
   width: 100vw;
   padding: 40px;
+  padding-top: 70px;
   /* Desktops and laptops ----------- */
   /* Large screens ----------- */
 }
 .first-container .slogan {
   background-color: #fff8e49a;
-  width: 80%;
+  border-radius: 3px;
+  padding: 0.6rem;
+  width: 85%;
 }
 .first-container .slogan p {
   color: #d06343;
@@ -79,6 +383,7 @@ p {
 .second-container h3 {
   font-size: 1.4rem;
   font-weight: 500;
+  color: #d06343;
 }
 .second-container .main-chunk {
   background-color: #9e9e9e4d;
@@ -109,7 +414,6 @@ p {
   background-attachment: fixed;
   background-position: center;
   background-image: url("../assets/images/wave-left-to-right.png");
-  height: 100vh;
   width: 100vw;
   padding: 40px;
   /* Desktops and laptops ----------- */
@@ -134,9 +438,17 @@ p {
   font-size: 1rem;
   font-weight: 500;
 }
+.third-container a:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
 .third-container .last-message {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-color: #fff8e49a;
+  border-radius: 3px;
+  padding: 0.6rem;
 }
 .third-container .last-message p {
   color: #d06343;

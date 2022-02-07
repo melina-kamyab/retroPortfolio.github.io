@@ -1,12 +1,12 @@
-//Navbar
-window.onscroll = function () {scrollFunction();};
+//Modal
 
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+$('.button').click(function(){
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
+})
 
-document.getElementById("navbar").style.background = "#501e27";
-} else {
-
-document.getElementById("navbar").style.background = "none";
-}
-}
+$('#modal-container').click(function(){
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
+});
