@@ -4,21 +4,148 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff8e4;
 }
 
-/* Webfont: LittleBirds */
-@font-face {
-  font-family: "LittleBirds";
-  src: url("Little Birds.eot");
-  /* IE9 Compat Modes */
-  src: url("Little Birds.eot?#iefix") format("embedded-opentype"), url("Little Birds.woff") format("woff"), url("Little Birds.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+body[data-aos-duration="4000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="800"] {
+  transition-duration: 800ms;
 }
+
 h1 {
-  font-family: "LittleBirds";
+  font-family: "NTWagner";
+  color: #554706;
+  font-size: 3.5rem;
+}
+
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../assets/images/wave-right-to-left.png");
+  height: 85vh;
+  width: 100vw;
+  padding: 40px;
+  /* Desktops and laptops ----------- */
+  /* Large screens ----------- */
+}
+.first-container .slogan {
+  background-color: #fff8e49a;
+  width: 80%;
+}
+.first-container .slogan p {
+  color: #d06343;
+  font-size: 1.4rem;
+}
+@media only screen and (min-width: 1224px) {
+  .first-container {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .first-container {
+    /* Styles */
+  }
+}
+
+.second-container {
+  width: 100vw;
+  padding: 40px;
+  display: contents;
+  /* Desktops and laptops ----------- */
+  /* Large screens ----------- */
+}
+.second-container h2 {
+  font-size: 2.5rem;
+  color: #d06343;
+  font-family: "Space Mono", monospace;
+}
+.second-container h3,
+.second-container p {
+  color: #554706;
+}
+.second-container h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.second-container .main-chunk {
+  background-color: #9e9e9e4d;
+  padding: 50px 20px;
+}
+.second-container .main-chunk .top-three {
+  padding: 2.5rem 0;
+}
+.second-container #first-top {
+  padding-top: 1rem;
+}
+@media only screen and (min-width: 1224px) {
+  .second-container {
+    /* Styles */
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .second-container {
+    /* Styles */
+  }
+}
+
+.third-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../assets/images/wave-left-to-right.png");
+  height: 100vh;
+  width: 100vw;
+  padding: 40px;
+  /* Desktops and laptops ----------- */
+  /* Large screens ----------- */
+}
+.third-container .project {
+  width: 100%;
+  margin: 2rem 0;
+  color: #554706;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid;
+  border-left: 10px solid #554706;
+  background-color: #fff8e49a;
+}
+.third-container .project h3,
+.third-container .project p {
+  color: #554706;
+}
+.third-container .project h3 {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.third-container .last-message {
+  display: flex;
+  background-color: #fff8e49a;
+}
+.third-container .last-message p {
+  color: #d06343;
+  font-size: 1.4rem;
+}
+@media only screen and (min-width: 1824px) {
+  .third-container {
+    /* Styles */
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

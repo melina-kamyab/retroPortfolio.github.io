@@ -1,0 +1,18 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin flexColumnSpaceBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin centerBackground{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+

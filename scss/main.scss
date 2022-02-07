@@ -1,23 +1,153 @@
+@import './utilities/utilities';
+
 body {
   z-index: 1;
-  //font-family: "Roboto", sans-serif;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff8e4;
+}
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='800'] {
+  transition-duration: 800ms;
 }
 
-/* Webfont: LittleBirds */@font-face {
-  font-family: 'LittleBirds';
-  src: url('Little Birds.eot'); /* IE9 Compat Modes */
-  src: url('Little Birds.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Little Birds.woff') format('woff'), /* Modern Browsers */
-       url('Little Birds.ttf') format('truetype'); /* Safari, Android, iOS */
-           font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+h1 {
+  //font-family: 'LittleBirds';
+  font-family: 'NTWagner';
+  color: #554706;
+  font-size: 3.5rem;
+}
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1{
-  font-family:'LittleBirds'
+.first-container {
+  @include flexColumnSpaceBetween;
+  @include centerBackground;
+  background-image: url('../assets/images/wave-right-to-left.png');
+  height: 85vh;
+  width: 100vw;
+  padding: 40px;
+
+  // h1 {
+  //   font-size: 3.5rem;
+  // }
+  .slogan {
+    background-color: #fff8e49a;
+    width: 80%;
+    p {
+      color: $base-red;
+      font-size: 1.4rem;
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    height: 100vh;
+  }
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    /* Styles */
+  }
+}
+
+.second-container {
+  width: 100vw;
+  padding: 40px;
+  display: contents;
+
+  h2 {
+    font-size: 2.5rem;
+    color: #d06343;
+    font-family: 'Space Mono', monospace;
+  }
+
+  h3,
+  p {
+    color: #554706;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .main-chunk {
+    // background-color: #b0ded836;
+    background-color: #9e9e9e4d;
+    padding: 50px 20px;
+
+    .top-three {
+      padding: 2.5rem 0;
+    }
+  }
+
+  #first-top {
+    padding-top: 1rem;
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    /* Styles */
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    /* Styles */
+  }
+}
+
+.third-container {
+  @include flexColumnSpaceBetween;
+  @include centerBackground;
+  background-image: url('../assets/images/wave-left-to-right.png');
+  height: 100vh;
+  width: 100vw;
+  padding: 40px;
+
+  .project {
+    // height: 5rem;
+    width: 100%;
+    margin: 2rem 0;
+    color: #554706;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-left: 10px solid #554706;
+    //background-color: #55460666;
+    background-color: #fff8e49a;
+    h3,
+    p {
+      color: #554706;
+    }
+
+    h3 {
+      font-family: 'Space Mono', monospace;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .last-message {
+    display: flex;
+    background-color: #fff8e49a;
+    p {
+      color: $base-red;
+      font-size: 1.4rem;
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+  }
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    /* Styles */
+  }
 }
