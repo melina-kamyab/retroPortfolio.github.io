@@ -52,6 +52,8 @@ p {
   width: 100vw;
   padding: 40px;
   padding-top: 10rem;
+  background-size: 100%;
+
   /* Desktops and laptops ----------- */
   @media only screen and (min-width: 1224px) {
     height: 100vh;
@@ -178,6 +180,8 @@ p {
   background-image: url('../assets/images/wave-left-to-right.png');
   width: 100vw;
   padding: 40px 40px 0 40px;
+  background-size: 100%;
+  
   @media only screen and (min-width: 1224px) {
     background-size: 110%;
   }
