@@ -22,6 +22,14 @@ body[data-aos-duration='1500'] [data-aos],
   transition-duration: 1500ms;
 }
 
+@font-face {
+  font-family: 'NTWagner';
+  src: url('https://melinakamyab.com/css/fonts/NTWagner.eot');
+  src: url('https://melinakamyab.com/css/fonts/NTWagner.woff') format('woff'),
+    url('https://melinakamyab.com/css/fonts/NTWagner.otf') format('opentype'),
+    url('https://melinakamyab.com/css/fonts/NTWagner.svg#filename')
+      format('svg');
+}
 h1 {
   //font-family: 'LittleBirds';
   font-family: 'NTWagner';
