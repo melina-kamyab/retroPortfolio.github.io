@@ -531,7 +531,7 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .third-container .project h3 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -545,12 +545,12 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .third-container .project p {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 1824px) {
   .third-container .project p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 .third-container a:hover {
