@@ -354,7 +354,9 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .first-container {
+    height: 100vh;
     padding-top: 15rem;
+    background-size: 105%;
   }
 }
 .first-container h1 {
@@ -363,7 +365,7 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .first-container h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -391,7 +393,7 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .first-container .slogan p {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -490,12 +492,15 @@ p {
   background-position: center;
   background-image: url("../assets/images/wave-left-to-right.png");
   width: 100vw;
-  padding: 40px;
-  /* Desktops and laptops ----------- */
-  /* Large screens ----------- */
+  padding: 40px 40px 0 40px;
+}
+@media only screen and (min-width: 1224px) {
+  .third-container {
+    background-size: 110%;
+  }
 }
 .third-container section {
-  margin: 40px 0;
+  margin: 40px;
   /* Desktops and laptops ----------- */
 }
 @media only screen and (min-width: 1224px) {
@@ -559,6 +564,12 @@ p {
   background-color: #fff8e49a;
   border-radius: 3px;
   padding: 0.6rem;
+  /* Desktops and laptops ----------- */
+}
+@media only screen and (min-width: 1224px) {
+  .third-container .last-message {
+    margin-bottom: 7rem;
+  }
 }
 .third-container .last-message p {
   color: #d06343;
@@ -582,18 +593,13 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .third-container h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-top: 70px;
   }
 }
 @media only screen and (min-width: 1824px) {
   .third-container h1 {
     font-size: 7rem;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  .third-container {
-    /* Styles */
   }
 }
 

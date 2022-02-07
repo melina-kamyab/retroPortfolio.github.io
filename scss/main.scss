@@ -46,13 +46,15 @@ p {
   padding-top: 10rem;
   /* Desktops and laptops ----------- */
   @media only screen and (min-width: 1224px) {
+    height: 100vh;
     padding-top: 15rem;
+    background-size: 105%;
   }
 
   h1 {
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
-      font-size: 6rem;
+      font-size: 5rem;
     }
     /* Large screens ----------- */
     @media only screen and (min-width: 1824px) {
@@ -74,7 +76,7 @@ p {
       font-size: 1.4rem;
       /* Desktops and laptops ----------- */
       @media only screen and (min-width: 1224px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       /* Large screens ----------- */
       @media only screen and (min-width: 1824px) {
@@ -167,10 +169,13 @@ p {
   @include centerBackground;
   background-image: url('../assets/images/wave-left-to-right.png');
   width: 100vw;
-  padding: 40px;
-  section {
-    margin: 40px 0;
+  padding: 40px 40px 0 40px;
+  @media only screen and (min-width: 1224px) {
+    background-size: 110%;
+  }
 
+  section {
+    margin: 40px;
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
       margin: 70px 0;
@@ -231,10 +236,14 @@ p {
     background-color: #fff8e49a;
     border-radius: 3px;
     padding: 0.6rem;
+
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      margin-bottom: 7rem;
+    }
     p {
       color: $base-red;
       font-size: 1.4rem;
-
       /* Desktops and laptops ----------- */
       @media only screen and (min-width: 1224px) {
         font-size: 2rem;
@@ -249,20 +258,12 @@ p {
   h1 {
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
-      font-size: 6rem;
+      font-size: 5rem;
       margin-top: 70px;
     }
     /* Large screens ----------- */
     @media only screen and (min-width: 1824px) {
       font-size: 7rem;
     }
-  }
-
-  /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
-  }
-  /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
-    /* Styles */
   }
 }
