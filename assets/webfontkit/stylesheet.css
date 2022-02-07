@@ -12,6 +12,7 @@
   font-family: 'NTWagner';
   src: url('https://melinakamyab.com/css/fonts/NTWagner.eot');
   src: url('https://melinakamyab.com/css/fonts/NTWagner.woff') format('woff'),
+    url('https://melinakamyab.com/css/fonts/NTWagner.woff2') format('woff2'),
     url('https://melinakamyab.com/css/fonts/NTWagner.otf') format('opentype'),
     url('https://melinakamyab.com/css/fonts/NTWagner.svg') format('svg');
 }
