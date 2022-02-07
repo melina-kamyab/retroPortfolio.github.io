@@ -1,6 +1,6 @@
 @import './utilities/utilities';
 @import './components/components';
-//@import './components/croissant';
+
 html {
   scroll-behavior: smooth;
 }
@@ -43,26 +43,49 @@ p {
   height: 85vh;
   width: 100vw;
   padding: 40px;
-  padding-top: 70px;
+  padding-top: 10rem;
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    padding-top: 15rem;
+  }
+
+  h1 {
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      font-size: 6rem;
+    }
+    /* Large screens ----------- */
+    @media only screen and (min-width: 1824px) {
+      font-size: 7rem;
+    }
+  }
 
   .slogan {
     background-color: #fff8e49a;
     border-radius: 3px;
     padding: 0.6rem;
     width: 85%;
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      width: 65%;
+    }
     p {
       color: $base-red;
       font-size: 1.4rem;
+      /* Desktops and laptops ----------- */
+      @media only screen and (min-width: 1224px) {
+        font-size: 3rem;
+      }
+      /* Large screens ----------- */
+      @media only screen and (min-width: 1824px) {
+        font-size: 4rem;
+      }
     }
-  }
-
-  /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
-    height: 100vh;
-  }
-  /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
-    /* Styles */
+    &:hover {
+      text-decoration: underline;
+      color: $base-red;
+      cursor: pointer;
+    }
   }
 }
 
@@ -75,6 +98,44 @@ p {
     font-size: 2.5rem;
     color: #d06343;
     font-family: 'Space Mono', monospace;
+    text-decoration: underline;
+    margin: 40px 0;
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      font-size: 3rem;
+    }
+
+    /* Large screens ----------- */
+    @media only screen and (min-width: 1824px) {
+      font-size: 4rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #d06343;
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      font-size: 2rem;
+    }
+
+    /* Large screens ----------- */
+    @media only screen and (min-width: 1824px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  p {
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      font-size: 1.5rem;
+    }
+
+    /* Large screens ----------- */
+    @media only screen and (min-width: 1824px) {
+      font-size: 2rem;
+    }
   }
 
   h3,
@@ -82,34 +143,22 @@ p {
     color: #554706;
   }
 
-  h3 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #d06343;
-  }
-
   .main-chunk {
     // background-color: #b0ded836;
     background-color: #9e9e9e4d;
     padding: 50px 20px;
 
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      padding: 70px;
+    }
+
+    #first-top {
+      padding-top: 1rem;
+    }
     .top-three {
       padding: 2.5rem 0;
     }
-  }
-
-  #first-top {
-    padding-top: 1rem;
-  }
-
-  /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
-    /* Styles */
-  }
-
-  /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
-    /* Styles */
   }
 }
 
@@ -117,9 +166,16 @@ p {
   @include flexColumnSpaceBetween;
   @include centerBackground;
   background-image: url('../assets/images/wave-left-to-right.png');
-  //height: 100vh;
   width: 100vw;
   padding: 40px;
+  section {
+    margin: 40px 0;
+
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      margin: 70px 0;
+    }
+  }
 
   .project {
     // height: 5rem;
@@ -130,8 +186,8 @@ p {
     border-radius: 5px;
     border: 2px solid;
     border-left: 10px solid #554706;
-    //background-color: #55460666;
     background-color: #fff8e49a;
+
     h3,
     p {
       color: #554706;
@@ -141,6 +197,25 @@ p {
       font-family: 'Space Mono', monospace;
       font-size: 1rem;
       font-weight: 500;
+      /* Desktops and laptops ----------- */
+      @media only screen and (min-width: 1224px) {
+        font-size: 2rem;
+      }
+      /* Large screens ----------- */
+      @media only screen and (min-width: 1824px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      /* Desktops and laptops ----------- */
+      @media only screen and (min-width: 1224px) {
+        font-size: 1rem;
+      }
+      /* Large screens ----------- */
+      @media only screen and (min-width: 1824px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -159,6 +234,27 @@ p {
     p {
       color: $base-red;
       font-size: 1.4rem;
+
+      /* Desktops and laptops ----------- */
+      @media only screen and (min-width: 1224px) {
+        font-size: 2rem;
+      }
+      /* Large screens ----------- */
+      @media only screen and (min-width: 1824px) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  h1 {
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      font-size: 6rem;
+      margin-top: 70px;
+    }
+    /* Large screens ----------- */
+    @media only screen and (min-width: 1824px) {
+      font-size: 7rem;
     }
   }
 
