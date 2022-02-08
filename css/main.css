@@ -379,7 +379,7 @@ p {
   width: 100vw;
   padding: 40px;
   padding-top: 10rem;
-  background-size: 100%;
+  background-size: 120%;
   /* Desktops and laptops ----------- */
 }
 @media only screen and (min-width: 1224px) {
@@ -404,15 +404,15 @@ p {
   }
 }
 .first-container .slogan {
-  background-color: #fff8e4ba;
+  background-color: #fff8e4e8;
   border-radius: 6px;
   padding: 0.6rem;
-  width: 85%;
+  width: 80%;
   /* Desktops and laptops ----------- */
 }
 @media only screen and (min-width: 1224px) {
   .first-container .slogan {
-    width: 65%;
+    width: 40%;
     margin-bottom: 5rem;
   }
 }
@@ -425,7 +425,8 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .first-container .slogan p {
-    font-size: 2.9rem;
+    font-size: 3rem;
+    font-weight: 900;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -525,7 +526,7 @@ p {
   background-image: url("../assets/images/wave-left-to-right.svg");
   width: 100vw;
   padding: 40px 40px 0 40px;
-  background-size: 100%;
+  background-size: 110%;
 }
 .third-container h1 {
   /* Desktops and laptops ----------- */
@@ -593,7 +594,7 @@ p {
 }
 .third-container .last-message-wrapper {
   display: flex;
-  background-color: #fff8e4ba;
+  background-color: #fff8e4e8;
   border-radius: 6px;
   padding: 1.5rem;
   margin: 2rem 0;
