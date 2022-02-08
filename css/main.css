@@ -540,15 +540,6 @@ p {
     font-size: 7rem;
   }
 }
-.third-container section {
-  margin: 40px;
-  /* Desktops and laptops ----------- */
-}
-@media only screen and (min-width: 1224px) {
-  .third-container section {
-    margin: 70px 0;
-  }
-}
 .third-container .project {
   width: 100%;
   margin: 2rem 0;
