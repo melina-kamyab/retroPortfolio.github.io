@@ -50,7 +50,7 @@ header {
   justify-content: space-evenly;
 }
 .navbar li {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   /* Desktops and laptops ----------- */
 }
 .navbar li a {
