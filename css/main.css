@@ -6,6 +6,10 @@
   display: inline-block;
 }
 
+.croissant {
+  height: 70px;
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -43,14 +47,15 @@ header {
 .navbar {
   font-family: "Space Mono", monospace;
   display: flex;
-  background-color: #ffffff6b;
+  background-color: #fff8e4d9;
 }
 .navbar ul {
-  width: 30%;
-  justify-content: space-evenly;
+  width: 80%;
+  justify-content: flex-end;
 }
 .navbar li {
   font-size: 0.85rem;
+  padding: 6px;
   /* Desktops and laptops ----------- */
 }
 .navbar li a {
@@ -59,6 +64,7 @@ header {
 @media only screen and (min-width: 1224px) {
   .navbar li {
     font-size: 1rem;
+    padding: 10px;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -93,7 +99,7 @@ header {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #ffffff6b;
+  background-color: #fff8e4;
   width: 100%;
 }
 
@@ -118,6 +124,10 @@ footer {
   .contact img {
     width: 70px;
   }
+}
+
+ul li a:hover img {
+  transform: scale(1.3);
 }
 
 html.modal-active,
@@ -187,19 +197,19 @@ body.modal-active {
   text-align: left;
 }
 #modal-container .modal-background .modal h2 {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 25px;
   margin-bottom: 15px;
   font-family: "Space Mono", monospace;
 }
 #modal-container .modal-background .modal h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 4px;
   margin-top: 20px;
   font-weight: 600;
 }
 #modal-container .modal-background .modal p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 22px;
   margin: 0;
 }
@@ -315,7 +325,7 @@ body {
 body h1 {
   font-family: "nt_wagnerbold";
   color: #554706;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
 }
 
 body[data-aos-duration="1000"] [data-aos],
@@ -371,7 +381,7 @@ p {
 }
 @media only screen and (min-width: 1224px) {
   .first-container h1 {
-    font-size: 6rem;
+    font-size: 6.5rem;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -380,8 +390,8 @@ p {
   }
 }
 .first-container .slogan {
-  background-color: #fff8e49a;
-  border-radius: 3px;
+  background-color: #fff8e4ba;
+  border-radius: 6px;
   padding: 0.6rem;
   width: 85%;
   /* Desktops and laptops ----------- */
@@ -394,6 +404,7 @@ p {
 .first-container .slogan p {
   color: #d06343;
   font-size: 1.4rem;
+  font-weight: 600;
   /* Desktops and laptops ----------- */
   /* Large screens ----------- */
 }
@@ -505,6 +516,21 @@ p {
     background-size: 110%;
   }
 }
+.third-container h1 {
+  /* Desktops and laptops ----------- */
+  /* Large screens ----------- */
+}
+@media only screen and (min-width: 1224px) {
+  .third-container h1 {
+    font-size: 6.5rem;
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .third-container h1 {
+    font-size: 7rem;
+  }
+}
 .third-container section {
   margin: 40px;
   /* Desktops and laptops ----------- */
@@ -563,49 +589,36 @@ p {
   text-decoration: underline;
   color: cornflowerblue;
 }
-.third-container .last-message {
+.third-container .last-message-wrapper {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #fff8e49a;
-  border-radius: 3px;
-  padding: 0.6rem;
+  background-color: #fff8e4ba;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
   /* Desktops and laptops ----------- */
 }
 @media only screen and (min-width: 1224px) {
-  .third-container .last-message {
+  .third-container .last-message-wrapper {
     margin-bottom: 7rem;
   }
 }
-.third-container .last-message p {
+.third-container .last-message-wrapper p {
   color: #d06343;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   /* Desktops and laptops ----------- */
   /* Large screens ----------- */
 }
 @media only screen and (min-width: 1224px) {
-  .third-container .last-message p {
-    font-size: 2rem;
+  .third-container .last-message-wrapper p {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (min-width: 1824px) {
-  .third-container .last-message p {
-    font-size: 3rem;
-  }
-}
-.third-container h1 {
-  /* Desktops and laptops ----------- */
-  /* Large screens ----------- */
-}
-@media only screen and (min-width: 1224px) {
-  .third-container h1 {
-    font-size: 5rem;
-    margin-top: 70px;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  .third-container h1 {
-    font-size: 7rem;
+  .third-container .last-message-wrapper p {
+    font-size: 2.7rem;
   }
 }
 

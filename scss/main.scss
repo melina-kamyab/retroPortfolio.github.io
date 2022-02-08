@@ -16,7 +16,7 @@ body {
     //font-family: 'LittleBirds';
     font-family: 'nt_wagnerbold';
     color: #554706;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
 }
 body[data-aos-duration='1000'] [data-aos],
@@ -63,7 +63,7 @@ p {
   h1 {
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
-      font-size: 6rem;
+      font-size: 6.5rem;
     }
     /* Large screens ----------- */
     @media only screen and (min-width: 1824px) {
@@ -72,8 +72,8 @@ p {
   }
 
   .slogan {
-    background-color: #fff8e49a;
-    border-radius: 3px;
+    background-color: #fff8e4ba;
+    border-radius: 6px;
     padding: 0.6rem;
     width: 85%;
     /* Desktops and laptops ----------- */
@@ -83,6 +83,7 @@ p {
     p {
       color: $base-red;
       font-size: 1.4rem;
+      font-weight: 600;
       /* Desktops and laptops ----------- */
       @media only screen and (min-width: 1224px) {
         font-size: 2.9rem;
@@ -179,10 +180,21 @@ p {
   background-image: url('../assets/images/wave-left-to-right.png');
   width: 100vw;
   padding: 40px 40px 0 40px;
-  //background-size: 100%;
 
   @media only screen and (min-width: 1224px) {
     background-size: 110%;
+  }
+
+  h1 {
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+      font-size: 6.5rem;
+      margin-top: 70px;
+    }
+    /* Large screens ----------- */
+    @media only screen and (min-width: 1824px) {
+      font-size: 7rem;
+    }
   }
 
   section {
@@ -194,7 +206,6 @@ p {
   }
 
   .project {
-    // height: 5rem;
     width: 100%;
     margin: 2rem 0;
     color: #554706;
@@ -240,13 +251,14 @@ p {
     color: cornflowerblue;
   }
 
-  .last-message {
+  .last-message-wrapper {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #fff8e49a;
-    border-radius: 3px;
-    padding: 0.6rem;
+    background-color: #fff8e4ba;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
 
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
@@ -254,27 +266,16 @@ p {
     }
     p {
       color: $base-red;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      font-weight: 600;
       /* Desktops and laptops ----------- */
       @media only screen and (min-width: 1224px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       /* Large screens ----------- */
       @media only screen and (min-width: 1824px) {
-        font-size: 3rem;
+        font-size: 2.7rem;
       }
-    }
-  }
-
-  h1 {
-    /* Desktops and laptops ----------- */
-    @media only screen and (min-width: 1224px) {
-      font-size: 5rem;
-      margin-top: 70px;
-    }
-    /* Large screens ----------- */
-    @media only screen and (min-width: 1824px) {
-      font-size: 7rem;
     }
   }
 }

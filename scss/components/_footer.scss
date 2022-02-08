@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: center;
-  background-color: #ffffff6b;
+  background-color: #fff8e4;
   width: 100%;
 }
 
@@ -20,10 +20,12 @@ footer {
   }
   img {
     width: 40px;
-
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
       width: 70px;
     }
   }
+}
+ul li a:hover img {
+  transform: scale(1.3);
 }
