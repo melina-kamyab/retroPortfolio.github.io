@@ -1,16 +1,4 @@
-.croissant:hover {
-  padding-left: 0.625rem;
-  animation-name: wave-animation;
-  animation-duration: 3s;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-.croissant {
-  height: 70px;
-}
-
-@keyframes wave-animation {
+@keyframes wave-animation-left {
   0% {
     transform: rotate(0deg);
   }
@@ -31,6 +19,32 @@
   }
   60% {
     transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes wave-animation-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-4deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  60% {
+    transform: rotate(14deg);
   }
   100% {
     transform: rotate(0deg);
@@ -592,12 +606,12 @@ p {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  width: 60%;
   /* Desktops and laptops ----------- */
 }
 @media only screen and (min-width: 1224px) {
   .third-container .last-message-wrapper {
     margin-bottom: 7rem;
+    width: 60%;
   }
 }
 .third-container .last-message-wrapper p {
@@ -616,6 +630,23 @@ p {
   .third-container .last-message-wrapper p {
     font-size: 2.7rem;
   }
+}
+.third-container .last-message-wrapper .croissant {
+  padding-left: 0.625rem;
+  animation-name: wave-animation-left;
+  animation-duration: 3s;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  animation-iteration-count: infinite;
+  height: 50px;
+}
+.third-container .last-message-wrapper .coffee {
+  animation-duration: 3s;
+  animation-name: wave-animation-right;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  animation-iteration-count: infinite;
+  height: 60px;
 }
 
 /*# sourceMappingURL=main.css.map */

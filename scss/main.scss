@@ -259,11 +259,11 @@ p {
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
-    width: 60%;
 
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
       margin-bottom: 7rem;
+      width: 60%;
     }
     p {
       color: $base-red;
@@ -277,6 +277,24 @@ p {
       @media only screen and (min-width: 1824px) {
         font-size: 2.7rem;
       }
+    }
+    .croissant {
+      padding-left: 0.625rem;
+      animation-name: wave-animation-left;
+      animation-duration: 3s;
+      transform-origin: 70% 70%;
+      display: inline-block;
+      animation-iteration-count: infinite;
+      height: 50px;
+    }
+
+    .coffee {
+      animation-duration: 3s;
+      animation-name: wave-animation-right;
+      transform-origin: 70% 70%;
+      display: inline-block;
+      animation-iteration-count: infinite;
+      height: 60px;
     }
   }
 }
