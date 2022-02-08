@@ -312,6 +312,11 @@ body {
   align-items: center;
   background-color: #fff8e4;
 }
+body h1 {
+  font-family: "nt_wagnerbold";
+  color: #554706;
+  font-size: 3.5rem;
+}
 
 body[data-aos-duration="1000"] [data-aos],
 [data-aos][data-aos][data-aos-duration="1000"] {
