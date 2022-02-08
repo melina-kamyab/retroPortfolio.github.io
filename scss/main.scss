@@ -55,7 +55,7 @@ p {
 
   /* Desktops and laptops ----------- */
   @media only screen and (min-width: 1224px) {
-    height: 100vh;
+    height: 110vh;
     padding-top: 15rem;
     background-size: 105%;
   }
@@ -79,6 +79,7 @@ p {
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
       width: 65%;
+      margin-bottom: 5rem;
     }
     p {
       color: $base-red;
