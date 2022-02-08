@@ -79,7 +79,7 @@ p {
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
       width: 40%;
-      margin-bottom: 5rem;
+      margin-bottom: 5rem 2rem;
     }
     p {
       color: $base-red;
