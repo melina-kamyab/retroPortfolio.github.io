@@ -55,19 +55,18 @@ p {
 
   /* Desktops and laptops ----------- */
   @media only screen and (min-width: 1224px) {
-    height: 110vh;
-    padding-top: 15rem;
+    padding-top: 10rem;
     background-size: 105%;
   }
 
   h1 {
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
-      font-size: 6.5rem;
+      font-size: 7.5rem;
     }
     /* Large screens ----------- */
     @media only screen and (min-width: 1824px) {
-      font-size: 7rem;
+      font-size: 9rem;
     }
   }
 
@@ -76,6 +75,7 @@ p {
     border-radius: 6px;
     padding: 0.6rem;
     width: 80%;
+
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
       width: 45%;
@@ -112,7 +112,6 @@ p {
     font-size: 2.5rem;
     color: #d06343;
     font-family: 'Space Mono', monospace;
-    text-decoration: underline;
     margin: 40px 0;
     /* Desktops and laptops ----------- */
     @media only screen and (min-width: 1224px) {
