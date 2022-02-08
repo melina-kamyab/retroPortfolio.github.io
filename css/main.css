@@ -524,6 +524,7 @@ p {
   background-image: url("../assets/images/wave-left-to-right.svg");
   width: 100vw;
   padding: 40px 40px 0 40px;
+  background-size: 100%;
 }
 .third-container h1 {
   /* Desktops and laptops ----------- */
