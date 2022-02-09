@@ -369,7 +369,7 @@ p {
   justify-content: space-between;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: unset;
+  background-attachment: unset !important;
   background-size: 110%;
   height: 80vh;
   width: 100vw;
@@ -522,7 +522,7 @@ p {
   justify-content: space-between;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: unset;
+  background-attachment: unset !important;
   background-size: 110%;
   width: 100vw;
   padding: 40px 40px 0 40px;

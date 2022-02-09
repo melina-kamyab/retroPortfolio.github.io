@@ -22,7 +22,7 @@ background-size:120%;
 @mixin centerBackgroundSmallScreen{
 background-position: center center; 
 background-repeat: no-repeat; 
-background-attachment: unset;
+background-attachment: unset !important;
 background-size:110%;
 }
 
