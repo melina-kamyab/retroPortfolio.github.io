@@ -179,11 +179,19 @@ p {
 
 .third-container {
   background-image: url('../assets/images/wave-left-to-right.svg');
+  //background-image: url('../assets/images/wave-medium-lower.svg');
   @include flexColumnSpaceBetween;
-  @include centerBackgroundBigScreen;
+  @include centerBackgroundSmallScreen;
+  
   width: 100vw;
   padding: 40px 40px 0 40px;
   background-size: 110%;
+
+  @include verticalTablet{
+    background-image: url('../assets/images/wave-left-to-right.svg');
+    @include centerBackgroundBigScreen;
+  }
+
   h1 {
     @include desktop{
       font-size: 6.5rem;

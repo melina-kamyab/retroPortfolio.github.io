@@ -520,14 +520,23 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: 1.5rem;
-  background-size: 120%;
+  background-attachment: unset;
+  background-size: 110%;
   width: 100vw;
   padding: 40px 40px 0 40px;
   background-size: 110%;
+}
+@media screen and (min-width: 768px) {
+  .third-container {
+    background-image: url("../assets/images/wave-left-to-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 1.5rem;
+    background-size: 120%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .third-container h1 {
