@@ -174,7 +174,6 @@ p {
 }
 
 .third-container {
-  //background-image: url('../assets/images/wave-left-to-right.svg');
   background-image: url("../assets/images/wave-medium-lower.svg");
   @include flexColumnSpaceBetween;
   @include centerBackgroundSmallScreen;
