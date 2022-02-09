@@ -38,7 +38,7 @@ p {
 
 .first-container {
   //background-image: url('../assets/images/wave-right-to-left.svg');
-  background-image: url('../assets/images/wave-medium-upper.svg');
+  background-image: url('../assets/images/test-wave.svg');
   @include flexColumnSpaceBetween;
   @include centerBackgroundSmallScreen;
   // background-size: 120%;
@@ -177,8 +177,8 @@ p {
 }
 
 .third-container {
-  background-image: url('../assets/images/wave-left-to-right.svg');
-  //background-image: url('../assets/images/wave-medium-lower.svg');
+  //background-image: url('../assets/images/wave-left-to-right.svg');
+  background-image: url('../assets/images/wave-medium-lower.svg');
   @include flexColumnSpaceBetween;
   @include centerBackgroundSmallScreen;
   
