@@ -369,6 +369,7 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   background-image: url("../assets/images/wave-right-to-left.svg");
   height: 80vh;
   width: 100vw;
@@ -506,6 +507,7 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   background-image: url("../assets/images/wave-left-to-right.svg");
   width: 100vw;
   padding: 40px 40px 0 40px;
