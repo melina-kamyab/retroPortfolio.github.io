@@ -26,7 +26,7 @@ body {
 h1 {
   font-family: 'nt_wagnerbold';
   color: #554706;
-  font-size: 3.6rem;
+  font-size: 4rem;
 }
 h2,
 h3 {
@@ -40,7 +40,7 @@ p {
   @include flexColumnSpaceBetween;
   @include centerBackground;
   background-image: url('../assets/images/wave-right-to-left.svg');
-  height: 85vh;
+  height: 80vh;
   width: 100vw;
   padding: 40px;
   padding-top: 10rem;
