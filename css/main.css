@@ -370,12 +370,17 @@ p {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-image: url("../assets/images/wave-right-to-left.svg");
+  background-image: url("../assets/images/small-wave-upper-min.png");
   height: 80vh;
   width: 100vw;
   padding: 40px;
   padding-top: 10rem;
   background-size: 120%;
+}
+@media screen and (min-width: 768px) {
+  .first-container {
+    background-image: url("../assets/images/wave-right-to-left.svg");
+  }
 }
 @media screen and (min-width: 1024px) {
   .first-container {

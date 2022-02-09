@@ -39,12 +39,15 @@ p {
 .first-container {
   @include flexColumnSpaceBetween;
   @include centerBackground;
-  background-image: url('../assets/images/wave-right-to-left.svg');
+  background-image: url('../assets/images/small-wave-upper-min.png');
   height: 80vh;
   width: 100vw;
   padding: 40px;
   padding-top: 10rem;
   background-size: 120%;
+  @include verticalTablet{
+    background-image: url('../assets/images/wave-right-to-left.svg');
+  }
   @include desktop{
     height: 90vh;
     padding-top: 10rem;
