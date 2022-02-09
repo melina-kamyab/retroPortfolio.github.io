@@ -37,8 +37,8 @@ p {
 }
 
 .first-container {
-  //background-image: url('../assets/images/wave-right-to-left.svg');
-  background-image: url('../assets/images/wave-medium-upper.svg');
+  background-image: url('../assets/images/wave-right-to-left.svg');
+  //background-image: url('../assets/images/wave-medium-upper.svg');
   @include flexColumnSpaceBetween;
   @include centerBackgroundSmallScreen;
   height: 80vh;
@@ -179,6 +179,7 @@ p {
   background-image: url('../assets/images/small-wave-lower-min.png');
   @include flexColumnSpaceBetween;
   @include centerBackgroundSmallScreen;
+  background-attachment: fixed;
   
   width: 100vw;
   padding: 40px 40px 0 40px;
