@@ -10,16 +10,19 @@
   justify-content: space-between;
 }
 
-@mixin centerBackground{
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-size:cover;
-background-size: cover !important; 
-background-position: center center; 
+@mixin centerBackgroundBigScreen{
+//background-size: cover !important; 
+background-position: center; 
 background-repeat: no-repeat; 
 background-attachment: fixed;
+background-position-y: 1.5rem;
+background-size:120%;
+}
 
-
+@mixin centerBackgroundSmallScreen{
+background-position: center center; 
+background-repeat: no-repeat; 
+background-attachment: unset;
+background-size:110%;
 }
 

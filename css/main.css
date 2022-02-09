@@ -363,28 +363,26 @@ p {
 }
 
 .first-container {
-  background-image: url("../assets/images/wave-medium-upper.svg");
+  background-image: url("../assets/images/wave-right-to-left.svg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-size: cover !important;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-attachment: unset;
+  background-size: 110%;
   height: 80vh;
   width: 100vw;
-  padding: 40px;
   padding-top: 10rem;
-  background-size: 120%;
 }
 @media screen and (min-width: 768px) {
   .first-container {
     background-image: url("../assets/images/wave-right-to-left.svg");
-    background-size: cover !important;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-y: 1.5rem;
+    background-size: 120%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -411,7 +409,14 @@ p {
     font-size: 9rem;
   }
 }
+.first-container .greeting {
+  margin: 0 40px;
+}
+.first-container .modal-container {
+  margin: 0 40px;
+}
 .first-container .slogan {
+  margin: 0 40px;
   background-color: #fff8e4e8;
   border-radius: 6px;
   padding: 0.6rem;
@@ -511,14 +516,15 @@ p {
 }
 
 .third-container {
+  background-image: url("../assets/images/wave-left-to-right.svg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-size: cover !important;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url("../assets/images/wave-left-to-right.svg");
+  background-position-y: 1.5rem;
+  background-size: 120%;
   width: 100vw;
   padding: 40px 40px 0 40px;
   background-size: 110%;
