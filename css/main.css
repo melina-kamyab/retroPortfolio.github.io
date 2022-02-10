@@ -351,6 +351,7 @@ h1 {
   font-family: "nt_wagnerbold";
   color: #554706;
   font-size: 4rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 h2,
