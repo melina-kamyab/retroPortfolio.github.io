@@ -27,7 +27,7 @@ h1 {
   font-family: 'nt_wagnerbold';
   color: #554706;
   font-size: 4rem;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 h2,
 h3 {
@@ -38,20 +38,19 @@ p {
 }
 
 .first-container {
-  background-image: url('../assets/images/wave-medium-upper.svg');
+  background-image: url('../../assets/images/wave-upper.svg');
   @include flexColumnSpaceBetween;
   @include centerBackgroundSmallScreen;
   height: 80vh;
   width: 100vw;
   padding-top: 10rem;
- 
 
-  @include verticalTablet{
-    background-image: url('../assets/images/wave-right-to-left.svg');
+  @include verticalTablet {
+    background-image: url('../../assets/images/wave-upper-small.svg');
     @include centerBackgroundBigScreen;
   }
 
-  @include desktop{
+  @include desktop {
     height: 90vh;
     padding-top: 10rem;
     background-size: 105%;
@@ -64,20 +63,20 @@ p {
   }
 
   h1 {
-    @include desktop{
-      margin-top:6rem;
+    @include desktop {
+      margin-top: 6rem;
       font-size: 7.5rem;
     }
-    @include desktopXLarge{
+    @include desktopXLarge {
       font-size: 9rem;
     }
   }
 
-  .greeting{
+  .greeting {
     margin: 0 40px;
   }
 
-  .modal-container{
+  .modal-container {
     margin: 0 40px;
   }
 
@@ -87,9 +86,9 @@ p {
     border-radius: 6px;
     padding: 0.6rem;
     width: 80%;
-    @include desktop{
+    @include desktop {
       width: 45%;
-      margin-bottom: 2rem ;
+      margin-bottom: 2rem;
     }
 
     p {
@@ -97,11 +96,11 @@ p {
       font-size: 1.4rem;
       font-weight: $fw-regular;
 
-      @include desktop{
+      @include desktop {
         font-size: 2.5rem;
         font-weight: $fw-bold;
       }
-      @include desktopXLarge{
+      @include desktopXLarge {
         font-size: 4rem;
       }
     }
@@ -110,9 +109,39 @@ p {
       color: $base-red;
       cursor: pointer;
     }
+
+    // p {
+    //   background: linear-gradient(
+    //       to right,
+    //       $base-red,
+    //       $base-red // rgba(100, 200, 200, 1),
+    //       // rgba(100, 200, 200, 1)
+    //     ),
+    //     linear-gradient(
+    //       to right,
+    //       #cc3229,
+    //       #fbae16,
+    //       #f6dd0e,
+    //       #65b6a6 // rgba(255, 0, 0, 1),
+    //       // rgba(255, 0, 180, 1),
+    //       // rgba(0, 100, 200, 1)
+    //     );
+    //   background-size: 100% 0.1em, 0 0.1em;
+    //   background-position: 100% 100%, 0 100%;
+    //   background-repeat: no-repeat;
+    //   transition: background-size 400ms;
+    // }
+
+    p:hover,
+    p:focus {
+      background-size: 0 0.1em, 100% 0.1em;
+      cursor: pointer;
+    }
   }
 
-
+  .arrow {
+    width: 60px;
+  }
 }
 
 .second-container {
@@ -122,7 +151,7 @@ p {
   .main-chunk {
     background-color: #fff8e4;
     padding: 50px 20px;
-    @include desktop{
+    @include desktop {
       padding: 70px;
     }
     #first-top {
@@ -135,67 +164,65 @@ p {
 
   h2 {
     font-size: 2.5rem;
-    font-family: 'Space Mono', monospace;
+    font-family: 'nt_wagnerbold';
     margin: 40px 0;
-    color: #554706; 
-    @include desktop{
+    color: #554706;
+    @include desktop {
       font-size: 3rem;
     }
-    @include desktopXLarge{
+    @include desktopXLarge {
       font-size: 4rem;
     }
   }
 
   h3,
   p {
-    color:#554706; 
+    color: #554706;
   }
 
   h3 {
     font-size: 1.4rem;
     font-weight: 500;
-    @include desktop{
+    @include desktop {
       font-size: 2rem;
     }
-    @include desktopXLarge{
+    @include desktopXLarge {
       font-size: 2.4rem;
     }
   }
 
   p {
-    @include desktop{
+    @include desktop {
       font-size: 1.5rem;
     }
-    @include desktopXLarge{
+    @include desktopXLarge {
       font-size: 2rem;
     }
   }
-
-
 }
 
 .third-container {
-  background-image: url("../assets/images/wave-medium-lower.svg");
+  background-image: url('../../assets/images/wave-lower.svg');
   @include flexColumnSpaceBetween;
   @include centerBackgroundSmallScreen;
   background-attachment: unset;
   background-position-y: 0rem;
-  
+
   width: 100vw;
   padding: 40px 40px 0 40px;
   background-size: 110%;
 
-  @include verticalTablet{
-    background-image: url('../assets/images/wave-left-to-right.svg');
+  @include verticalTablet {
+    background-image: url('../../assets/images/wave-lower-small.svg');
     @include centerBackgroundBigScreen;
   }
 
   h1 {
-    @include desktop{
+    @include desktop {
       font-size: 6.5rem;
       margin-top: 70px;
     }
-    @include desktopXLarge{
+    @include desktopXLarge {
       font-size: 7rem;
     }
   }
@@ -216,28 +243,39 @@ p {
       font-family: 'Space Mono', monospace;
       font-size: 1rem;
       font-weight: 500;
-      @include desktop{
+      @include desktop {
         font-size: 2.1rem;
       }
-      @include desktopXLarge{
+      @include desktopXLarge {
         font-size: 2.5rem;
       }
     }
     p {
-      @include desktop{
+      @include desktop {
         font-size: 1.4rem;
       }
-      @include desktopXLarge{
+      @include desktopXLarge {
         font-size: 1.8rem;
       }
     }
     a:hover {
       text-decoration: underline;
-      color: cornflowerblue;
+      color: #6495ed;
+    }
+
+    .fork-me {
+      p {
+        display: flex;
+        align-items: baseline;
+        font-weight: 900;
+      }
+      img {
+        height: 45px;
+        padding-right: 1px;
+        transform: rotate(4deg);
+      }
     }
   }
-
-
 
   .last-message-wrapper {
     display: flex;
@@ -248,7 +286,7 @@ p {
     display: flex;
     flex-direction: column;
 
-    @include desktop{
+    @include desktop {
       margin-bottom: 7rem;
       width: 60%;
     }
@@ -256,11 +294,11 @@ p {
     p {
       color: $base-red;
       font-size: 1.2rem;
-      font-weight:$fw-regular;
-      @include desktop{
+      font-weight: $fw-regular;
+      @include desktop {
         font-size: 1.5rem;
       }
-      @include desktopXLarge{
+      @include desktopXLarge {
         font-size: 2rem;
       }
     }
