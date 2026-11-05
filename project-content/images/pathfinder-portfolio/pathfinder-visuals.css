@@ -1,0 +1,4 @@
+.pathfinder-visual { margin: 0; background: transparent; color: inherit; }
+.pathfinder-visual img { display: block; width: 100%; height: auto; border-radius: var(--portfolio-radius, 16px); }
+.pathfinder-visual h3 { font: inherit; font-size: 1.4rem; margin-block: 0 1rem; }
+.pathfinder-visual figcaption { margin-block-start: 1rem; line-height: 1.5; color: inherit; opacity: .75; }

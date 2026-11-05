@@ -1,0 +1,29 @@
+/* Background inherits from your page. All headings and captions are live text. */
+.project-visual {
+  --visual-surface: transparent;
+  --visual-text: inherit;
+  --visual-muted: #666963;
+  --visual-radius: 24px;
+  --visual-gap: clamp(24px, 5vw, 72px);
+  padding: clamp(20px, 4vw, 64px);
+  background: var(--visual-surface);
+  color: var(--visual-text);
+}
+.project-visual__header { margin-block-end: clamp(24px, 4vw, 48px); max-width: 65ch; }
+.project-visual__header h2 { font: inherit; font-size: clamp(26px, 4vw, 48px); line-height: 1.15; margin: 12px 0; }
+.project-visual__header p { line-height: 1.5; }
+.project-visual__eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; color: var(--visual-muted); }
+.project-visual figure { margin: 0; min-width: 0; }
+.project-visual figcaption { margin-top: 16px; font-size: .9rem; color: var(--visual-muted); }
+.project-visual img { display: block; max-width: 100%; height: auto; }
+.charging-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--visual-gap); max-width: 1200px; margin-inline: auto; align-items: start; }
+.charging-grid img { width: 100%; border-radius: var(--visual-radius); }
+.dashboard-image { width: 100%; border-radius: 8px; }
+.persona-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.persona-grid img { width: 100%; }
+.process-image { width: 100%; }
+@media (max-width: 600px) {
+  .persona-grid { grid-template-columns: 1fr; }
+  .charging-grid { grid-template-columns: 1fr; gap: 32px; max-width: 380px; }
+  .project-visual { padding-inline: 0; }
+}
