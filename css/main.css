@@ -1201,6 +1201,280 @@ body.portfolio-page {
   font-size: 15px;
 }
 
+.project-card:focus-visible,
+.selected-card:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 6px;
+}
+
+.project-page {
+  overflow-x: hidden;
+}
+
+.project-detail__hero {
+  width: 100%;
+  height: min(68vh, 760px);
+  min-height: 360px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--soft);
+}
+
+.project-detail__hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-detail__hero--contain {
+  display: grid;
+  place-items: center;
+  height: auto;
+  min-height: 0;
+  padding: 48px;
+}
+
+.project-detail__hero--contain img {
+  max-height: 68vh;
+  object-fit: contain;
+}
+
+.project-detail__hero--charging {
+  height: min(76vh, 900px);
+  min-height: 440px;
+  padding: 28px;
+}
+
+.project-detail__hero--charging img {
+  width: auto;
+  max-width: 100%;
+}
+
+.project-detail__intro {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.project-detail__overview {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.7fr);
+  gap: 80px;
+}
+
+.project-detail__overview h1 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(54px, 8vw, 104px);
+  font-weight: 400;
+  line-height: 0.98;
+  text-shadow: none;
+}
+
+.project-detail__lead {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: var(--body-copy);
+  font-size: clamp(19px, 2.2vw, 25px);
+  line-height: 1.5;
+}
+
+.project-detail__facts {
+  display: grid;
+  gap: 24px;
+  margin: 16px 0 0;
+  padding-left: 28px;
+  border-left: 1px solid var(--rule);
+}
+
+.project-detail__facts div {
+  display: grid;
+  gap: 7px;
+}
+
+.project-detail__facts dt,
+.project-detail__figure figcaption span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-detail__facts dd {
+  margin: 0;
+  color: var(--body-copy);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.project-detail__story {
+  display: grid;
+  margin-top: 74px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px;
+}
+
+.project-detail__story article {
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+}
+
+.project-detail__story .eyebrow {
+  margin-bottom: 16px;
+}
+
+.project-detail__story h2,
+.project-detail__mobile-view h2,
+.project-detail__persona-intro h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.project-detail__story article > p:last-child,
+.project-detail__mobile-view > div > p:last-child,
+.project-detail__persona-intro > p:last-child {
+  max-width: 580px;
+  margin: 18px 0 0;
+  color: var(--body-copy);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.project-detail__gallery {
+  display: grid;
+  gap: 72px;
+  padding: 0 0 88px;
+}
+
+.project-detail__figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.project-detail__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-detail__figure--wide {
+  width: min(100% - 96px, 1320px);
+  margin-inline: auto;
+}
+
+.project-detail__figure--wide img {
+  max-height: 78vh;
+  object-fit: contain;
+  background: var(--paper);
+}
+
+.project-detail__figure figcaption {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-top: 14px;
+  color: var(--body-copy);
+  font-size: 13px;
+}
+
+.project-detail__figure-pair {
+  display: grid;
+  width: min(100% - 160px, 1240px);
+  margin-inline: auto;
+  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.project-detail__figure-pair--personas,
+.project-detail__figure-pair--charging {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.project-detail__figure-pair--charging .project-detail__figure--device img {
+  max-height: 76vh;
+  object-fit: contain;
+}
+
+.project-detail__persona-intro {
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.project-detail__persona-intro .eyebrow,
+.project-detail__mobile-view .eyebrow {
+  margin-bottom: 16px;
+}
+
+.project-detail__mobile-view {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.7fr);
+  gap: 96px;
+}
+
+.project-detail__figure--phone {
+  width: min(100%, 560px);
+  justify-self: center;
+}
+
+.project-detail__figure--phone img {
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.project-detail__pagination {
+  display: flex;
+  min-height: 150px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--rule);
+}
+
+.project-detail__back {
+  color: var(--muted) !important;
+  font-size: 13px;
+}
+
+.project-detail__next {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 22px;
+  align-items: center;
+  text-align: right;
+}
+
+.project-detail__next > span:first-child {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-detail__next strong {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.project-detail__next > span:last-child {
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.project-page__footer {
+  padding-top: 28px;
+}
 
 .about-section {
   padding: 96px 0;
@@ -1664,6 +1938,113 @@ body.portfolio-page {
 
   .site-footer__bottom {
     gap: 12px;
+  }
+
+  .project-detail__hero {
+    height: 48svh;
+    min-height: 250px;
+  }
+
+  .project-detail__hero--contain {
+    height: auto;
+    min-height: 0;
+    padding: 20px 24px;
+  }
+
+  .project-detail__hero--contain img {
+    max-height: 58svh;
+  }
+
+  .project-detail__hero--charging {
+    height: 64svh;
+    min-height: 360px;
+    padding: 16px;
+  }
+
+  .project-detail__intro {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .project-detail__overview {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .project-detail__overview h1 {
+    font-size: clamp(52px, 14vw, 76px);
+  }
+
+  .project-detail__facts {
+    gap: 18px;
+    margin-top: 0;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--rule);
+    border-left: 0;
+  }
+
+  .project-detail__story {
+    margin-top: 48px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .project-detail__gallery {
+    gap: 44px;
+    padding-bottom: 54px;
+  }
+
+  .project-detail__figure--wide,
+  .project-detail__figure-pair {
+    width: calc(100% - 48px);
+  }
+
+  .project-detail__figure--wide img {
+    max-height: none;
+  }
+
+  .project-detail__figure-pair,
+  .project-detail__figure-pair--personas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .project-detail__figure-pair--charging {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+  }
+
+  .project-detail__figure-pair--charging .project-detail__figure--device img {
+    max-height: 58vh;
+  }
+
+  .project-detail__mobile-view {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .project-detail__figure--phone {
+    width: min(86%, 420px);
+  }
+
+  .project-detail__figure--phone img {
+    max-height: 74svh;
+  }
+
+  .project-detail__pagination {
+    min-height: 130px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+
+  .project-detail__next {
+    align-self: flex-end;
+  }
+
+  .project-page__footer {
+    padding-top: 24px;
   }
 }
 
