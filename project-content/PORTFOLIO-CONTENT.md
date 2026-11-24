@@ -11,7 +11,7 @@ Source: the supplied portfolio folder. “Not specified in source” means the f
 - **Summary:** Redesigned the landing page to explain electric transport planning and guide visitors towards exploring the platform, starting a trial, or contacting the team.
 - **Responsibilities:** Shaped the product story and visual hierarchy; presented the offering through three steps and calls to action; organized product explanations, customer examples, and commercial information.
 - **Tools / methods:** Not specified in source.
-- **Images:** `images/pathfinder-portfolio/images/Pathfinder - hero .png`; `Pathfinder - How it works.png`; `Pathfinder - Customer cases.png`; `Pathfinder - Knowledge hub.png` (all in the same images directory).
+- **Images:** `images/pathfinder-portfolio/images/Pathfinder - hero.png`; `Pathfinder - How it works.png`; `Pathfinder - Customer cases.png`; `Pathfinder - Knowledge hub.png` (all in the same images directory).
 - **Notes:** The case study is draft copy: confirm the live captures and stated design intentions reflect the author's work. No measured outcome, before image, or mobile screenshot is supplied.
 
 ## Elain
@@ -26,9 +26,9 @@ Source: the supplied portfolio folder. “Not specified in source” means the f
 - **Images:** `images/Elain/elain-dashboard.webp`, `persona-carrier.webp`, `persona-buyer.webp`, `persona-decision-maker.webp`, `elain-delivery-process.svg` (all in the Elain directory).
 - **Notes:** Dashboard shown without laptop. The process graphic has a transparent outer background and cream cards; it is a portfolio summary adapted from the original presentation.
 
-## Charging interface
+## Electric Truck Charging Experience
 
-- **Name:** Not specified in source; the image folder is named `Voltra`.
+- **Name:** Electric Truck Charging Experience (portfolio title supplied by the owner); the image folder is named `Voltra`.
 - **Year:** Not specified in source.
 - **Category:** Charging interface design.
 - **Role:** Not specified in source.
@@ -44,4 +44,4 @@ Three distinct projects are supported by the supplied folder; personas and proce
 
 1. **Pathfinder — lead project.** Blurb: “Redesigning a landing page to make electric transport planning easier to understand.” Image: `images/pathfinder-portfolio/images/Pathfinder - hero .png`. Fit: strong hero and clearest documented role and narrative.
 2. **Elain — second project.** Blurb: “An emissions-reporting interface with supporting personas and a product delivery workflow.” Image: `images/Elain/elain-dashboard.webp`. Fit: recognizable product visual with supporting case-study material.
-3. **Charging interface — third project.** Blurb: “Interface screens showing the start, progress, and completion of a charging session.” Images: `images/Voltra/charging-start.png`, `charging-active.png`, and `charging-complete.png`. Fit: cohesive sequence; role and project context need more source material.
+3. **Electric Truck Charging Experience — third project.** Blurb: “Interface screens showing the start, progress, and completion of a charging session.” Images: `images/Voltra/charging-start.png`, `charging-active.png`, and `charging-complete.png`. Fit: cohesive sequence; role and project context need more source material.

@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css?v=20261106-6" />
+    <link rel="stylesheet" href="css/main.css?v=20261124-20" />
   </head>
   <body class="portfolio-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -31,8 +31,8 @@
       <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">Frontend Developer · UX/UI</p>
-          <h1 id="hero-title">Designing clearer digital journeys for complex products.</h1>
-          <p class="hero-intro">I help people understand complex services by turning big ideas into clear experiences, thoughtful information architecture, and confident next steps.</p>
+          <h1 id="hero-title">Turning user needs into thoughtful design</h1>
+          <p class="hero-intro">I enjoy understanding how people use a product, shaping an experience around what they need, and building the frontend that brings it to life.</p>
           <a class="text-link" href="#selected-work">
             View selected work <span aria-hidden="true">&#8594;</span>
           </a>
@@ -48,23 +48,41 @@
           <p class="selected-work__label" aria-hidden="true">Selected Work</p>
           <div class="selected-work__viewport" role="region" aria-label="Selected work gallery" tabindex="0">
             <div class="selected-work__track">
-              <a class="selected-card selected-card--landscape" href="./projects/pathfinder/" aria-label="View Pathfinder project">
+              <a class="selected-card selected-card--primary selected-card--pathfinder" href="./projects/pathfinder/" aria-label="View Pathfinder project">
                 <div class="selected-card__visual">
                   <img src="./project-content/images/pathfinder-portfolio/images/Pathfinder%20-%20hero.png" alt="Pathfinder landing-page hero section" />
                 </div>
                 <span class="selected-card__caption">Pathfinder</span>
               </a>
-              <a class="selected-card selected-card--square" href="./projects/elain/" aria-label="View Elain project">
+              <a class="selected-card selected-card--primary selected-card--elain" href="./projects/elain/" aria-label="View Elain project">
                 <div class="selected-card__visual">
                   <img src="./project-content/images/Elain/elain-dashboard.webp" alt="Elain emissions reporting dashboard" />
                 </div>
                 <span class="selected-card__caption">Elain</span>
               </a>
-              <a class="selected-card selected-card--portrait" href="./projects/charging/" aria-label="View charging interface project">
+              <a class="selected-card selected-card--portrait" href="./projects/charging/" aria-label="View Electric Truck Charging Experience project">
                 <div class="selected-card__visual">
-                  <img src="./project-content/images/Voltra/charging-active.png" alt="Charging display in active session" />
+                  <img src="./project-content/images/Voltra/voltra-active.gif" alt="Charger display" />
                 </div>
-                <span class="selected-card__caption">Charging interface</span>
+                <span class="selected-card__caption">EVSE Charging Experience</span>
+              </a>
+              <a class="selected-card selected-card--workflow" href="./projects/elain/" aria-label="View Elain project: shared UX workflow">
+                <div class="selected-card__visual">
+                  <img src="./project-content/images/Elain/elain-delivery-process.svg" alt="Elain workflow from framing a request through design, review, and delivery" loading="lazy" />
+                </div>
+                <span class="selected-card__caption">Elain · UX workflow</span>
+              </a>
+              <a class="selected-card selected-card--persona" href="./projects/elain/" aria-label="View Elain project: decision-maker persona">
+                <div class="selected-card__visual">
+                  <img src="./project-content/images/Elain/persona-decision-maker.webp" alt="Elain transport decision-maker persona" loading="lazy" />
+                </div>
+                <span class="selected-card__caption">Elain · User persona </span>
+              </a>
+              <a class="selected-card selected-card--portrait selected-card--phone" href="./projects/charging/" aria-label="View Electric Truck Charging Experience: mobile charging session">
+                <div class="selected-card__visual">
+                  <img src="./project-content/images/Voltra/voltra-phone-session.webp" alt="Mobile charging session" loading="lazy" />
+                </div>
+                <span class="selected-card__caption">EVSE Charging Experience</span>
               </a>
             </div>
           </div>
@@ -91,7 +109,7 @@
               <p class="project-card__meta"><span>Landing Page Redesign</span><span class="project-card__separator" aria-hidden="true">&bull;</span><time datetime="2026-04">Apr 2026</time></p>
             </div>
             </a>
-            <a class="project-card project-card--secondary" href="./projects/elain/">
+            <a class="project-card project-card--secondary project-card--elain" href="./projects/elain/">
             <div class="project-card__visual">
               <img src="./project-content/images/Elain/elain-dashboard.webp" alt="Elain emissions reporting dashboard overview" />
               <span class="project-card__action" aria-hidden="true">View Project <span>&#8594;</span></span>
@@ -101,13 +119,13 @@
               <p class="project-card__meta"><span>Emissions Reporting</span><span class="project-card__separator" aria-hidden="true">&bull;</span><time datetime="2024-06">Jun 2024</time>&ndash;<time datetime="2025-02">Feb 2025</time></p>
             </div>
             </a>
-            <a class="project-card project-card--secondary" href="./projects/charging/">
+            <a class="project-card project-card--secondary project-card--charging" href="./projects/charging/">
             <div class="project-card__visual">
-              <img src="./project-content/images/Voltra/charging-active.png" alt="Charging display in active session" />
+              <img src="./project-content/images/Voltra/voltra-charger-detail-context.webp" alt="Charger display" />
               <span class="project-card__action" aria-hidden="true">View Project <span>&#8594;</span></span>
             </div>
             <div class="project-card__caption">
-              <h3>Charging interface</h3>
+              <h3>Electric Truck Charging Experience</h3>
               <p class="project-card__meta"><span>Charging Interface</span><span class="project-card__separator" aria-hidden="true">&bull;</span><time datetime="2026-03">Mar 2026</time>&ndash; Current</p>
             </div>
             </a>
@@ -122,9 +140,8 @@
           </div>
           <div class="about-copy">
             <p class="eyebrow">About</p>
-            <h2 id="about-title">I design clarity into complex products.</h2>
-            <p>I’m a frontend developer who brings UX thinking into the build, shaping clear interfaces and practical user journeys.</p>
-            <p>My recent work spans electric mobility planning, emissions reporting, and charging interfaces — turning technical detail into clear digital journeys.</p>
+            <h2 id="about-title">Understanding people. Building thoughtful interfaces.</h2>
+            <p>I enjoy getting to know the people behind a product and turning what I learn into interfaces that are clear, thoughtful, and enjoyable to use. I bring structure and creativity to the process, using feedback to improve the product over time.</p>
             <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">&#8594;</span></a>
           </div>
         </div>
@@ -162,7 +179,7 @@
           <p>I’m open to frontend and UX/UI opportunities where clarity, trust, and better decision-making matter.</p>
           <div class="contact-actions">
             <a class="button button--dark" href="https://www.linkedin.com/in/melina-kamyab-7688a062/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
-            <a class="button button--light" href="./PDF-files/CV%20-%20EN%20%2020261026.pdf" target="_blank" rel="noopener noreferrer">Download CV <span aria-hidden="true">&#8599;</span></a>
+            <a class="button button--light" href="./PDF-files/CV%20-%20EN%20%2020261026.pdf" target="_blank" rel="noopener noreferrer">Resume <span aria-hidden="true">&#8599;</span></a>
           </div>
         </div>
       </section>

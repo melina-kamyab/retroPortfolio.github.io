@@ -2,6 +2,7 @@
   const section = document.querySelector(".selected-work");
   const viewport = document.querySelector(".selected-work__viewport");
   const track = document.querySelector(".selected-work__track");
+  const hint = document.querySelector(".selected-work__hint");
 
   if (section && viewport && track) {
     const desktopMotion = window.matchMedia(
@@ -14,6 +15,7 @@
       frame = 0;
       if (!desktopMotion.matches || travel <= 0) {
         track.style.transform = "";
+        hint?.classList.remove("is-hidden");
         return;
       }
 
@@ -23,6 +25,7 @@
         Math.max(0, (window.scrollY - sectionTop) / travel),
       );
       track.style.transform = `translate3d(${-travel * progress}px, 0, 0)`;
+      hint?.classList.toggle("is-hidden", progress > 0.04);
     };
 
     const scheduleUpdate = () => {
@@ -55,5 +58,4 @@
 
     measure();
   }
-
 })();
