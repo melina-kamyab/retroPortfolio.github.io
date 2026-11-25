@@ -24,19 +24,19 @@ Electric transport planning involves several connected questions: which routes c
 
 The hero introduces the product’s purpose and connects it to practical considerations: cost, lead time, and CO₂. A primary trial action sits alongside a secondary option for visitors who want to learn more first.
 
-*Suggested image: pathfinder-hero.webp*
+*Suggested image: pathfinder - hero.webp*
 
 ### Explain the product in manageable steps
 
 The three-step section breaks the offering into adding data, comparing alternatives, and exporting a plan. Each card pairs a short explanation with an opportunity to explore the relevant functionality.
 
-*Suggested image: pathfinder-how-it-works.webp*
+*Suggested image: Pathfinder - How it works.webp*
 
 ### Support different levels of readiness
 
 The page offers several next steps, including exploring the platform, starting a trial, and contacting the team. These options accommodate visitors who are still learning as well as those ready to engage.
 
-*Suggested image: pathfinder-pricing.webp*
+*Suggested image: Pathfinder - Knowledge hub.webp*
 
 ## Delivered design
 
