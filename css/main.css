@@ -788,9 +788,9 @@ body.portfolio-page {
   background: currentColor;
   content: "";
   opacity: 0;
-  transform: scaleX(0.7);
-  transform-origin: center;
-  transition: opacity 180ms ease, transform 180ms ease;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: opacity 320ms ease, transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .site-nav a:hover,
